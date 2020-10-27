@@ -1,32 +1,30 @@
-# Substrate Front End Template
+# Substrate Front End Template (with multisig remark UI component)
 
-This template allows you to create a front-end application that connects to a
-[Substrate](https://github.com/paritytech/substrate) node back-end with minimal
-configuration. To learn about Substrate itself, visit the
-[Substrate Developer Hub](https://substrate.dev).
+See commit history for the changes to the raw template
+Note: the *raw runtime directory* modified from the node template is included to see the changes to required to `/runtime/src/lib.rs` and`/runtime/Cargo.toml` for using this frontend. 
 
-The template is built with [Create React App](https://github.com/facebook/create-react-app)
-and [Polkadot js API](https://polkadot.js.org/api/). Familiarity with these tools
-will be helpful, but the template strives to be self-explanatory.
+See the `proof-pics` directory for a sample of how this works in action. 
 
-## Using The Template
+## Proof of Completion:
 
-### Installation
+### Using the component to submit a `multisig::as_multi` extrinsic
 
-The codebase is installed using [git](https://git-scm.com/) and [yarn](https://yarnpkg.com/). This tutorial assumes you have installed yarn globally prior to installing it within the subdirectories. For the most recent version and how to install yarn, please refer to [yarn](https://yarnpkg.com/) documentation and installation guides. 
+![1-multisig_submit.png](./proof-pics/1-multisig_submit.png)
 
-```bash
-# Clone the repository
-git clone https://github.com/substrate-developer-hub/substrate-front-end-template.git
-cd ./substrate-front-end-template
-yarn install
-```
+### Viewing the transaction via polkadot.js.org/apps
+
+![2-multisig_explore.png](./proof-pics/2-multisig_explore.png)
+
+> And see it in the same block as from the template reported (check the hash)
+
+![3-multisig_block.png](./proof-pics/3-multisig_block.png)
 
 ## Usage
 
 You can start the template in development mode to connect to a locally running node
 
 ```bash
+yarn install
 yarn start
 ```
 
